@@ -65,8 +65,11 @@ export default class Command extends BaseCommand {
       role = "🧚 Fairy";
     } else if (exp < 175000) {
       role = "🎃 Pumpkin";
-    } else {
+    } else if (exp < 200000) {
       role = "❄️ DEMON KING";
+    } else { 
+      role = "👑GOD";
+    
     }
     // eslint-disable-next-line @typescript-eslint/no-explicit-any
     let level: number;
@@ -96,9 +99,11 @@ export default class Command extends BaseCommand {
       level = 12;
     } else if (exp < 200000) {
       level = 13;
-    } else {
+    } else if (exp < 300000) {
       level = 14;
-    }
+    } else { 
+      level = 15;
+    } 
     await M.reply(
       await request.buffer(
         pfp || "https://wallpaperaccess.com/full/5304840.png"

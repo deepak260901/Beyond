@@ -40,8 +40,8 @@ export default class EventHandler {
           type: 1,
         },
         {
-          buttonId: "info",
-          buttonText: { displayText: `${this.client.config.prefix}info` },
+          buttonId: "ownerinfo",
+          buttonText: { displayText: `${this.client.config.prefix}ownerinfo` },
           type: 1,
         },
       ];

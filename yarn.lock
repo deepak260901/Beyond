@@ -6286,6 +6286,20 @@ w3c-xmlserializer@^2.0.0:
   integrity sha512-4tzD0mF8iSiMiNs30BiLO3EpfGLZUT2MSX/G+o7ZywDzliWQ3OPtTZ0PTC3B3ca1UAf4cJMHB+2Bf56EriJuRA==
   dependencies:
     xml-name-validator "^3.0.0"
+    
+w5-textmaker@^1.0.2:
+  version "1.0.2"
+  resolved "https://registry.yarnpkg.com/w5-textmaker/-/w5-textmaker-1.0.2.tgz#1b1d8f5887ea45dce287d5b3685feeef0119e0d8"
+  integrity sha512-7tL7uQObLHA2hhu/Q9DyEpim/BiyZ1XsoGlmNoQjTVNx2mk9IBQY4oRXoCvxZgeCXUqqi5+IM/OpC/wqvBfjuQ==
+  dependencies:
+    axios "^0.21.1"
+    cheerio "^1.0.0-rc.5"
+    cookie "^0.4.1"
+    form-data "^4.0.0"
+    instatouch "^2.3.3"
+    moment-timezone "^0.5.33"
+    node-fetch "^2.6.1"
+    paste.gg "^1.0.3"
 
 wa-sticker-formatter@^4.2.0:
   version "4.2.0"

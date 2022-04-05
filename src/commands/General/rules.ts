@@ -20,15 +20,15 @@ export default class Command extends BaseCommand {
   run = async (M: ISimplifiedMessage): Promise<void> => {
     const buttons = [
       {
-        buttonId: "rules",
-        buttonText: { displayText: `${this.client.config.prefix}rules` },
+        buttonId: "mods",
+        buttonText: { displayText: `${this.client.config.prefix}mods` },
         type: 1,
       },
     ];
 
     const buttonMessage: any = {
-      contentText: `\n\n_*HELLO THERE BEYOND BOT HERE*_\n\n 1.spamming cmds in casino=2days ban\n\n 2.don't dm mods for asking to be a mod.\n\n 3.don't ask us to sell our bots.\n\n 4.the more good you are gonna be as a beyond user the more rewards you'll get\n\n`,
-      footerText: "🎇 Beyond 🎇",
+      contentText: `_*----🎀[Rule]🎀----*_\n\n❌*DONT ASK FOR THE SCRIPT*🚫\n*>>>* use $support to get the Official group link in your dm\n*--->*  If you want to chat with Star you can use *Don't chat in private bot can't chat in Pm\n*--->* If you want to add Yotsuba in your group the contact the owner by *$owner/$mods* \n*--->* Dont use wrong command, use the command given in the *help list* \n*--->* Dont spam the bot with commands if the bot is not responding, its means the bot maybe offline or facing internet issue. \n*--->* Dont Dm the bot \n\n*IF YOU DONT FOLLOW THE RULES THEN YOU WILL BE BAN SOON* 🚫`,
+      footerText: "🎀𝓜𝓐𝓡𝓘𝓝𝓔🎀",
       buttons: buttons,
       headerType: 1,
     };

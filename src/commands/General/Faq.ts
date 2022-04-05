@@ -39,7 +39,7 @@ export default class Command extends BaseCommand {
 📑 *A:* Calling the bot is at your own pleasure but with consequences thus you will be blocked instantly for calling the bot!
 ᚖ ────── ✪ ────── ᚖ
 📮 *Q6:* Where can I find 🎀𝓜𝓐𝓡𝓘𝓝𝓔🎀 bot?
-📑 *A:* Elaina is one of the bots owned by *AYUSH* group. Incase you need other bots, use the command *#support* & you will get support group link in your DM.
+📑 *A:* 🎀𝓜𝓐𝓡𝓘𝓝𝓔🎀  is one of the bots owned by *AYUSH* group. Incase you need other bots, use the command *#support* & you will get support group link in your DM.
 ᚖ ────── ✪ ────── ᚖ
 📮 *Q7:* Can you hire a bot from *AYUSH?*
 📑 *A:* yess ypu can hire the bot from the owner but you have to pay for it please type #mods to see the owner .

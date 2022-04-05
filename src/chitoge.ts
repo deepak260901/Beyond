@@ -35,8 +35,6 @@ const callHandler = new CallHandler(client);
 const assetHandler = new AssetHandler(client);
 const eventHandler = new EventHandler(client);
 const newsHandler = new NewsHandler(client);
-const modsHandler = new ModsHandler(client);
-const modsChecker = new ModsChecker(client);
 messageHandler.loadCommands();
 assetHandler.loadAssets();
 messageHandler.loadFeatures();

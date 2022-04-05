@@ -12,7 +12,7 @@ export default class Command extends BaseCommand {
             command: 'iguser',
             aliases: ['ur', 'ig'],
             description: 'Get the info of a user from ig ',
-            category: 'media',
+            category: 'stalk',
             dm: true,
             usage: `${client.config.prefix}iguser [name]`
         })
@@ -23,7 +23,7 @@ export default class Command extends BaseCommand {
         if (!joined) return void M.reply('Provide the keywords you wanna search, Baka!')
         const chitoge = joined.trim()
         console.log(chitoge)
-        const { data } = await axios.get(`https://api-xcoders.xyz/api/stalk/ig?username=${chitoge}&apikey=LJowCce5Pn`)
+        const { data } = await axios.get(`https://api-xcoders.xyz/api/stalk/ig?username=${chitoge}&apikey=nMLptkNt9s`)
         if ((data as { error: string }).error) return void (await M.reply('Sorry, couldn\'t find'))
         const buffer = await request.buffer(data.result.profile_url).catch((e) => {
             return void M.reply(e.message)

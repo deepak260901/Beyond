@@ -49,7 +49,7 @@ export default class Command extends BaseCommand {
 ᚖ ────── ✪ ────── ᚖ
 📮 *Q9:* How can I create a bot like 🎀𝓜𝓐𝓡𝓘𝓝𝓔🎀?
 📑 *A:* SEE creating a bot like this is kinda difficult bcz you need a hight programing knowledge on ts/js so you can contact the owner and hire the bot and its paid so you have to pay for it 
- 🎗 https:wa.me//+918130784851.
+ 🎗 wa.me//+918130784851.
 ᚖ ────── ✪ ────── ᚖ
 📮 *Q10:* Is the *🎀𝓜𝓐𝓡𝓘𝓝𝓔🎀 * group sponsored?
 📑 *A:* Of course not, we're not sponsored either way but it could be your own pleasure to do that thus this is a non-profit organization.

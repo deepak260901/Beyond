@@ -10,7 +10,7 @@ export default class Command extends BaseCommand {
         super(client, handler, {
             command: 'textpro',
             description: 'Displays the help menu or shows the info of the command provided',
-            category: 'extras',
+            category: 'general',
             usage: `${client.config.prefix}help8 (command_name)`,
             dm: true,
             aliases: ['h8','tp',]

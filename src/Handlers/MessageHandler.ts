@@ -155,12 +155,12 @@ export default class MessageHandler {
     });
     if (state)
       return void M.reply(
-        `✖ 𝕔𝕠𝕞𝕞𝕒𝕟𝕕 𝕚𝕤 𝕕𝕚𝕤𝕒𝕓𝕝𝕖𝕕 𝕓𝕪 𝕒𝕕𝕞𝕚𝕟 𝕟𝕠𝕨 𝕟𝕠 𝕠𝕟𝕖 𝕔𝕒𝕟 𝕦𝕤𝕖 𝕚𝕥$ 凸( •̀_•́ )凸{
+        `✖ 𝕔𝕠𝕞𝕞𝕒𝕟𝕕 𝕚𝕤 𝕕𝕚𝕤𝕒𝕓𝕝𝕖𝕕 𝕓𝕪 𝕒𝕕𝕞𝕚𝕟 𝕟𝕠𝕨 𝕟𝕠 𝕠𝕟𝕖 𝕔𝕒𝕟 𝕦𝕤𝕖 𝕚𝕥$ 凸( •̀_•́ )凸${
           state.reason ? ` for ${state.reason}` : ""
         }`
       );
     if (!command.config?.dm && M.chat === "dm")
-      return void M.reply("This command can only be used in groups");
+      return void M.reply("𝕆ℕ𝕃𝕐 𝔸𝔻𝕄𝕀ℕ𝕊 ℂ𝔸ℕ 𝕌𝕊𝔼 𝕋ℍ𝕀𝕊 ℂ𝕆𝕄𝕄𝔸ℕ𝔻 𝔹𝔸𝕂𝔸 𝕐𝕆𝕌 𝕂ℕ𝕆𝕎 𝕐𝕆𝕌ℝ ℙ𝕃𝔸ℂ𝔼 ( ͡° ʖ̯ ͡°)");
     if (
       command.config?.modsOnly &&
       !this.client.config.mods?.includes(M.sender.jid)

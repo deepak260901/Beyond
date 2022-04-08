@@ -146,7 +146,7 @@ export default class MessageHandler {
       return void null;
     if (!command)
       return void M.reply(
-        `No such command, Baka! Have you never seen someone use the command *${this.client.config.prefix}help*.`
+        `𝔹𝔸𝕂𝔸 ᕕ(˵•̀෴•́˵)ᕗ𝕙𝕒𝕧𝕒𝕖 𝕪𝕠𝕦 𝕟𝕖𝕧𝕖𝕣 𝕤𝕖𝕖𝕟 𝕤𝕠𝕞𝕖𝕠𝕟𝕖 𝕦𝕤𝕚𝕟𝕘 *${this.client.config.prefix}help*.`
       );
     const user = await this.client.getUser(M.sender.jid);
     if (user.ban) return void M.reply("You're Banned from using commands.");
@@ -155,7 +155,7 @@ export default class MessageHandler {
     });
     if (state)
       return void M.reply(
-        `✖ This command is disabled${
+        `✖ 𝕔𝕠𝕞𝕞𝕒𝕟𝕕 𝕚𝕤 𝕕𝕚𝕤𝕒𝕓𝕝𝕖𝕕 𝕓𝕪 𝕒𝕕𝕞𝕚𝕟 𝕟𝕠𝕨 𝕟𝕠 𝕠𝕟𝕖 𝕔𝕒𝕟 𝕦𝕤𝕖 𝕚𝕥$ 凸( •̀_•́ )凸{
           state.reason ? ` for ${state.reason}` : ""
         }`
       );
@@ -165,11 +165,11 @@ export default class MessageHandler {
       command.config?.modsOnly &&
       !this.client.config.mods?.includes(M.sender.jid)
     ) {
-      return void M.reply(`Only MODS are allowed to use this command.`);
+      return void M.reply(`𝕆ℕ𝕃𝕐 𝔾𝕆𝔻'𝕊 𝔸ℝ𝔼 𝔸𝕃𝕃𝕆𝕎𝔼𝔻 𝕋𝕆 𝕌𝕊𝔼 𝕋ℍ𝕀𝕊 ℂ𝕆𝕄𝕄𝔸ℕ𝔻 ℕ𝕆𝕋 𝕐𝕆𝕌 𝕐𝕆𝕌 𝕊ℍ𝕆𝕌𝕃𝔻 𝕂ℕ𝕆𝕎 𝕐𝕆𝕌ℝ ℙ𝕃𝔸ℂ𝔼,𝔹𝔸𝕂𝔸 (•ˋ _ ˊ•).`);
     }
     if (command.config?.adminOnly && !M.sender.isAdmin)
       return void M.reply(
-        `This command is only meant for the group admins, Baka!`
+        `𝕋𝕙𝕚𝕤 𝕚𝕤 𝕠𝕟𝕝𝕪 𝕗𝕠𝕣 𝕓𝕖𝕒𝕦𝕥𝕚𝕗𝕦𝕝 𝕡𝕖𝕠𝕡𝕝𝕖,𝔹𝕒𝕜𝕒 🔥 !`
       );
     try {
       await command.run(M, this.parseArgs(args));
@@ -284,7 +284,7 @@ export default class MessageHandler {
       ];
       const buttonMessage: any = {
         contentText: `*A claimable character Appeared!*\n\n🎀 *Name: ${chara.name}*\n\n💬 *About:* ${chara.about}\n\n📛 *Source: ${source[0].anime.title}*\n\n💰 *Price: ${price}*\n\n*[Use ${this.client.config.prefix}claim to have this character in your gallery]*`,
-        footerText: "🎇 Beyond 🎇",
+        footerText: "𝕄𝔸ℝ𝕀ℕ ٩🥰۶ ٩😘۶ ",
         buttons: buttons,
         headerType: 4,
         imageMessage: media?.message?.imageMessage,

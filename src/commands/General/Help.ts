@@ -52,9 +52,9 @@ export default class Command extends BaseCommand {
 ╰────────────┈平和                            \n\n`
             const keys = Object.keys(categories)
             for (const key of keys)
-                text += `*『 ${this.client.util.capitalize(
-					key
-	         )} 』*\n❐ \`\`\`${categories[key]
+                text += `╚━❰😎 𝙈𝙖𝙧𝙞𝙣 ${this.emojis[keys.indexOf(key)]} ${this.client.util.capitalize(key)}•𖣘❱━╝\n• \`\`\`${categories[
+                    key
+                ]
                     .map((command) => command.config?.command)
                     .join(', ')}\`\`\`\n\n`
             return void this.client.sendMessage(M.from, { url: chitoge }, MessageType.video, {quoted:M.WAMessage,
@@ -63,7 +63,7 @@ export default class Command extends BaseCommand {
 ──❅┈[🎀𝓜𝓐𝓡𝓘𝓝𝓔🎀]┈❅───
 ┌────────────┈❅
 │   🎀𝓜𝓐𝓡𝓘𝓝𝓔🎀
-│   ©️ MADED BY AYUSH
+│   ©️🅰🆈🆄🆂🅷
 └────────────┈⁂
 ❅┈[𝐇𝐚𝐯𝐞 𝐆𝐫𝐞𝐚𝐭 𝐃𝐚𝐲]┈❅
 🎗 *Note: Use ${this.client.config.prefix}help <command_name> to view the command info*` }
@@ -85,4 +85,5 @@ export default class Command extends BaseCommand {
             )}\n💎 *Usage:* ${command.config?.usage || ''}\n\n📒 *Description:* ${command.config?.description || ''}`
         )
     }
+emojis = ['', '', '','', '', '', '', '', '', '', '', '']
 }

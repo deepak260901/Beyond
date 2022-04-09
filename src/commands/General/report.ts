@@ -21,8 +21,7 @@ export default class Command extends BaseCommand {
              const term = joined.trim()
             await this.client.sendMessage(
 		`918130784851@s.whatsapp.net`,
-                `「🎀𝓜𝓐𝓡𝓘𝓝𝓔🎀 」\n\n ${term} by ${M.sender.username} \n
-                  From : ${M.groupMetadata?.subject} `,
+             	`*\n👤 *User:@${M.sender.jid.split("@")[0]}*\n🎏: *${M.sender.username}*\n🔖 *Message: ${term}*\n From : ${M.groupMetadata?.subject} `,
                   MessageType.text
             );
             return void M.reply('Sent the bot admin your report To AYUSH  if you used this command for fun you will be banned!!')

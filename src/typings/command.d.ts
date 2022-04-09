@@ -26,7 +26,7 @@ export type TCategory =
   | "characters"
   | "stalk"
   | "idols"
-  | "creation"
+  | "Creations"
   | "coding"
   | "dev"
   | "economy"
@@ -42,5 +42,4 @@ export type TCategory =
   | "nsfw"
   | "utils"
   | "weeb"
-  | "lumine"
   | "category";

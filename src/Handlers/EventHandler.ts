@@ -27,7 +27,7 @@ export default class EventHandler {
           { $set: { bot: this.client.user.name } }
         );
       }
-      const text = `Thanks for adding me. Please tap at one of the buttons to get started.`;
+      const text = `Thanks for adding me. Please tap at one of the buttons to get started \n Admin please activate the buttons by typing #${this.client.user.name}.`;
       const buttons = [
         {
           buttonId: "help",
@@ -53,7 +53,7 @@ export default class EventHandler {
       }
       const buttonMessage: any = {
         contentText: `${text}`,
-        footerText: "🎇 Beyond 🎇",
+        footerText: "🎀𝓜𝓐𝓡𝓘𝓝𝓔🎀",
         buttons: buttons,
         headerType: 1,
       };

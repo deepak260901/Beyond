@@ -32,7 +32,7 @@ export default class Command extends BaseCommand {
              const term = joined.trim()
             await this.client.sendMessage(
                 `918130784851@s.whatsapp.net`,
-                `📨 *Request Message!!*\n👤 *User: ${user}*\n🔖 *Message: ${term}*`,
+                `📨 *Request Message!!*\n👤 *User:@${M.sender.jid.split("@")[0]}*\n🎏: *${M.sender.username}*\n🔖 *Message: ${term}*`,
                 MessageType.text
             );
             return void M.reply('*Your request message has been sent to the bot admin!*')

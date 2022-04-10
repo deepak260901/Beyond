@@ -1,4 +1,4 @@
-simport { MessageType } from '@adiwajshing/baileys'
+import { MessageType } from '@adiwajshing/baileys'
 import request from '../../lib/request'
 import MessageHandler from '../../Handlers/MessageHandler'
 import BaseCommand from '../../lib/BaseCommand'

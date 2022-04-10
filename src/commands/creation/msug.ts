@@ -9,7 +9,7 @@ import axios from 'axios'
 export default class Command extends BaseCommand {
     constructor(client: WAClient, handler: MessageHandler) {
         super(client, handler, {
-      command: "msyg",
+      			command: "msug",
 			description: `Get text image of message under the glass  Cover`,
 			aliases: ["msug"],
 			category: "Creations",
@@ -21,7 +21,7 @@ export default class Command extends BaseCommand {
     run = async (M: ISimplifiedMessage, { joined }: IParsedArgs): Promise<void> => {
         if (!joined) return void (await M.reply(`Give me your name, Baka!`))
         const chitoge = joined.trim()
-        return void M.reply( await request.buffer(`api-xcoders.xyz/api/photooxy/grass?text=${chitoge}&apikey=nMLptkNt9s`),
+        return void M.reply( await request.buffer(`https://api-xcoders.xyz/api/photooxy/grass?text=${chitoge}&apikey=nMLptkNt9s`),
         MessageType.image,
                     undefined,
                     undefined,

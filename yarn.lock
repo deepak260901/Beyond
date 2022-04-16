@@ -6612,7 +6612,7 @@
   dependencies:
     "xml-name-validator" "^3.0.0"
 
-"w5-textmaker@^1.0.2":
+"w5-textmaker@^1.0.5":
   "integrity" "sha512-RKD0YiG8Tcj5xJr9mZaUN6/lEqWU9LgD8ihDUA8FNQSs4rhusVlFg1cQLyvqsxSL98LL/CkIqAZeHlynP/7r1Q=="
   "resolved" "https://registry.npmjs.org/w5-textmaker/-/w5-textmaker-1.0.5.tgz"
   "version" "1.0.5"

@@ -5,7 +5,6 @@ import { ICommand, IParsedArgs, ISimplifiedMessage } from '../../typings'
 import { MessageType, Mimetype } from '@adiwajshing/baileys'
 import request from '../../lib/request'
 
-
 export default class Command extends BaseCommand {
     constructor(client: WAClient, handler: MessageHandler) {
         super(client, handler, {
@@ -18,7 +17,8 @@ export default class Command extends BaseCommand {
     }
 
     run = async (M: ISimplifiedMessage, parsedArgs: IParsedArgs): Promise<void> => {
-            const n = ["https://telegra.ph/file/e15eddbd05c6383c27820.mp4"]
+            const n = ["https://telegra.ph/file/e15eddbd05c6383c27820.mp4",
+		      ]
         let chitoge = n[Math.floor(Math.random() * n.length)]
 	if (!parsedArgs.joined) {
 			const commands = this.handler.commands.keys();
@@ -57,7 +57,7 @@ export default class Command extends BaseCommand {
             return void this.client.sendMessage(M.from, { url: chitoge }, MessageType.video, {quoted:M.WAMessage,
             mimetype: Mimetype.gif,
             caption: `${text} 
- ──❅┈[ 𝒀𝒐𝒕𝒔𝒖𝒃𝒂 𝑩𝒐𝒕 ]┈❅───
+ ──❅┈[MARIN]┈❅───
 ┌────────────┈❅
 │   🎀𝓜𝓐𝓡𝓘𝓝𝓔🎀
 │   ©️ MADED BY AYUSH

@@ -9,6 +9,7 @@ import qrImage from "qr-image";
 import { existsSync, writeFileSync } from "fs";
 import moment from "moment";
 import { join } from "path";
+import marika from "@shineiichijo/marika";
 import {
   IConfig,
   IExtendedGroupMetadata,
@@ -301,6 +302,7 @@ export default class WAClient extends Base {
         wallet: amount,
       }).save();
   };
+
   addMod = async (userJid: string): Promise<void> => {
     const result = await this.DB.feature.updateOne(
       { feature: "mods" },
@@ -319,7 +321,8 @@ export default class WAClient extends Base {
       { $pull: { jids: userJid } }
     );
   };
-summonHaigusha = async (jid: string, id: number): Promise<void> => {
+
+  summonHaigusha = async (jid: string, id: number): Promise<void> => {
     const haigusha = await marika.getCharacterById(id);
     const i = await this.getBuffer(haigusha.images.jpg.image_url);
     const source = await marika.getCharacterAnime(haigusha.mal_id);
@@ -402,7 +405,7 @@ summonHaigusha = async (jid: string, id: number): Promise<void> => {
     ];
     const buttonMessage: any = {
       contentText: `*A claimable character Appeared!*\n\n🎀 *Name: ${chara.name}*\n\n💬 *About:* ${chara.about}\n\n📛 *Source: ${source[0].anime.title}*\n\n💰 *Price: ${price}*\n\n*[Use ${this.config.prefix}claim to have this character in your gallery]*`,
-      footerText: "✞︎☠︎︎ Elaina ✞︎☠︎︎",
+      footerText: "MARIN💕",
       buttons: buttons,
       headerType: 4,
       imageMessage: media?.message?.imageMessage,

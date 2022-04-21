@@ -361,7 +361,7 @@ export default class WAClient extends Base {
     ];
     const buttonMessage: any = {
       contentText: `${text}`,
-      footerText: "✞︎☠︎︎Elsina✞︎☠︎︎",
+      footerText: "MARIN",
       buttons: buttons,
       headerType: 4,
       imageMessage: media?.message?.imageMessage,

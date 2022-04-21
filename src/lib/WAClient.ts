@@ -319,6 +319,129 @@ export default class WAClient extends Base {
       { $pull: { jids: userJid } }
     );
   };
+summonHaigusha = async (jid: string, id: number): Promise<void> => {
+    const haigusha = await marika.getCharacterById(id);
+    const i = await this.getBuffer(haigusha.images.jpg.image_url);
+    const source = await marika.getCharacterAnime(haigusha.mal_id);
+    await this.DB.group.updateMany(
+      { jid: jid },
+      {
+        $set: {
+          "haigushaResponse.name": haigusha.name,
+          "haigushaResponse.id": haigusha.mal_id,
+          "haigushaResponse.claimable": true,
+        },
+      }
+    );
+    let text = "";
+    text += `💙 *Name: ${haigusha.name}*\n\n`;
+    if (haigusha.nicknames.length > 0)
+      text += `🖤 *Nicknames: ${haigusha.nicknames.join(", ")}*\n\n`;
+    text += `💛 *Source: ${source[0].anime.title}*\n\n`;
+    text += `❤ *Description:* ${haigusha.about}`;
+    const media = await this.prepareMessage(
+      jid,
+      i,
+      MessageType.image
+    );
+    const buttons = [
+      {
+        buttonId: "marry",
+        buttonText: { displayText: `${this.config.prefix}marry` },
+        type: 1,
+      },
+      {
+        buttonId: "divorce",
+        buttonText: { displayText: `${this.config.prefix}divorce` },
+        type: 1,
+      },
+    ];
+    const buttonMessage: any = {
+      contentText: `${text}`,
+      footerText: "✞︎☠︎︎Elsina✞︎☠︎︎",
+      buttons: buttons,
+      headerType: 4,
+      imageMessage: media?.message?.imageMessage,
+    };
+    return void (await this.sendMessage(
+      jid,
+      buttonMessage,
+      MessageType.buttonsMessage
+    ));
+  };
+
+  summonChara = async (
+    jid: string,
+    price: number,
+    id: number
+  ): Promise<void> => {
+    const chara = await marika.getCharacterById(id);
+    const i = await this.getBuffer(chara.images.jpg.image_url);
+    const source = await marika.getCharacterAnime(chara.mal_id);
+    await this.DB.group.updateMany(
+        { jid: jid },
+        {
+          $set: {
+            "charaResponse.id": chara.mal_id,
+            "charaResponse.name": chara.name,
+            "charaResponse.image": chara.images.jpg.image_url,
+            "charaResponse.about": chara.about,
+            "charaResponse.source": source[0].anime.title,
+            "charaResponse.claimable": true,
+            "charaResponse.price": price,
+          },
+        }
+      );
+    const media = await this.prepareMessage(jid, i, MessageType.image);
+    const buttons = [
+      {
+        buttonId: "claim",
+        buttonText: { displayText: `${this.config.prefix}claim` },
+        type: 1,
+      },
+    ];
+    const buttonMessage: any = {
+      contentText: `*A claimable character Appeared!*\n\n🎀 *Name: ${chara.name}*\n\n💬 *About:* ${chara.about}\n\n📛 *Source: ${source[0].anime.title}*\n\n💰 *Price: ${price}*\n\n*[Use ${this.config.prefix}claim to have this character in your gallery]*`,
+      footerText: "✞︎☠︎︎ Elaina ✞︎☠︎︎",
+      buttons: buttons,
+      headerType: 4,
+      imageMessage: media?.message?.imageMessage,
+    };
+    return void (await this.sendMessage(
+      jid,
+      buttonMessage,
+      MessageType.buttonsMessage
+    ));
+  };
+
+  summonPokemon = async (
+    jid: string,
+    pokemon: string | number,
+    level: number
+  ): Promise<void> => {
+    const { data } = await axios.get(
+      `https://pokeapi.co/api/v2/pokemon/${pokemon}`
+    );
+    const buffer = await this.getBuffer(
+      `https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/${data.id}.png`
+    );
+    await this.DB.group.updateMany(
+      { jid: jid },
+      {
+        $set: {
+          catchable: true,
+          lastPokemon: data.name,
+          pId: data.id,
+          pLevel: level,
+          pImage: `https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/${data.id}.png`,
+        },
+      }
+    );
+    return void (await this.sendMessage(jid, buffer, MessageType.image, {
+      caption: `A wild pokemon appeared! Use ${this.config.prefix}catch to catch this pokemon.`,
+    }));
+  };
+
   modifyAllChats = async (
     action:
       | "archive"

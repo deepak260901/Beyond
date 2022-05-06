@@ -25,15 +25,14 @@ export default class Command extends BaseCommand {
             caption: `Hello  !🍃This is ✴🎀𝓜𝓐𝓡𝓘𝓝𝓔🎀✴ , And here is the info about my owners talk with them nicely and dont forget to follow their instagram.
             
 📫𝙒𝙝𝙖𝙩𝙨𝘼𝙥𝙥;
-Wa.me/+919574584820
+Wa.me/+919987052500
 Wa.me/+918130784851
 ⭕𝙂𝙞𝙩𝙝𝙪𝙗;
 https://github.com/monarch21
 📮𝙄𝙣𝙨𝙩𝙖𝙜𝙧𝙖𝙢;
 https://instagram.com/at.__010
-https://instagram.com/Bts.bigghitofficial7
 🕸𝙏𝙚𝙡𝙚𝙜𝙧𝙖𝙢;
-https://t.me/kim_Ayush
+https://t.me/@kim_Ayush
 🚀𝘿𝙞𝙨𝙘𝙤𝙧𝙙;
 >> https://discord.gg/Gkevahetaq <<
 ⪼𝖲𝖾𝖾 𝗒𝖺𝗁 💘` }

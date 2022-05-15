@@ -12,7 +12,7 @@ export default class Command extends BaseCommand {
 			command: "animeboy",
 			description: "sends pics of anime boy",
 			category: "idols",
-                        aliases: ["ab","at"],
+                        aliases: ["ab","ABO"],
 			usage: `${client.config.prefix}ab`,
 			baseXp: 10,
 		});

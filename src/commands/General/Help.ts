@@ -17,7 +17,10 @@ export default class Command extends BaseCommand {
     }
 
     run = async (M: ISimplifiedMessage, parsedArgs: IParsedArgs): Promise<void> => {
-            const n = ["https://c.tenor.com/YyGAq6x-reYAAAPo/ohayo-marin-paimon-marin.mp4",
+            const n = ["https://c.tenor.com/f9C16ymeFVYAAAPo/anime-rin.mp4",
+		       "https://c.tenor.com/eELLTdGDkKYAAAPo/levi-sexy.mp4",
+		       "https://c.tenor.com/2sGq5LoVFxgAAAPo/bungo-stray-dogs-dazai.mp4",
+		       "https://c.tenor.com/g3G5nn_gSxYAAAPo/dazai-osamu.mp4",
 		      ]
         let chitoge = n[Math.floor(Math.random() * n.length)]
 	if (!parsedArgs.joined) {
@@ -41,8 +44,8 @@ export default class Command extends BaseCommand {
 				}
 			}
             let text = `
-╭─「Kon'nichiwa *${M.sender.username}*'san
-│⋊ I'am:  🎀𝓜𝓐𝓡𝓘𝓝𝓔🎀
+╭─「Kon'nichiwa *${M.sender.username}*
+│⋊ I'am: Osamu Dazai
 │⋊ MY PREFIX: ${this.client.config.prefix}
 │⋊ 私の愛: *${this.client.config.prefix}mod*
 │⋊ 私の愛 : wa.me//+918130784851     
@@ -59,7 +62,7 @@ export default class Command extends BaseCommand {
             caption: `${text} 
  ──❅┈[MARIN]┈❅───
 ┌────────────┈❅
-│   🎀𝓜𝓐𝓡𝓘𝓝𝓔🎀
+│   🔥DAZAI🔥
 │   ©️ MADED BY AYUSH
 └────────────┈⁂
 ❅┈[𝐇𝐚𝐯𝐞 𝐆𝐫𝐞𝐚𝐭 𝐃𝐚𝐲]┈❅

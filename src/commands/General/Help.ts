@@ -17,7 +17,7 @@ export default class Command extends BaseCommand {
     }
 
     run = async (M: ISimplifiedMessage, parsedArgs: IParsedArgs): Promise<void> => {
-            const n = ["https://telegra.ph/file/e15eddbd05c6383c27820.mp4",
+            const n = ["https://c.tenor.com/YyGAq6x-reYAAAPo/ohayo-marin-paimon-marin.mp4",
 		      ]
         let chitoge = n[Math.floor(Math.random() * n.length)]
 	if (!parsedArgs.joined) {

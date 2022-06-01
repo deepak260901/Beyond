@@ -40,6 +40,6 @@ export type TCategory =
   | "utils"
   | "weeb"
   | "stalk"
-  | "Creations"
+  | "creation"
   | "idols"
   | "category";

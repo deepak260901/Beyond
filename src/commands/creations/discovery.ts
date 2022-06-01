@@ -12,7 +12,7 @@ export default class Command extends BaseCommand {
         command: "discovery",
 	description: `Get text image of DISCOVERY Cover`,
   	aliases: ["diss"],
-  	category: "Creations",
+  	category: "creation",
 	usage: `${client.config.prefix}diss`,
 	baseXp: 50,
         })

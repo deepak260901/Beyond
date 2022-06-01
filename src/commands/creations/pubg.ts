@@ -12,7 +12,7 @@ export default class Command extends BaseCommand {
       command: "pubg",
 			description: `Get text image of PUBG Cover`,
 			aliases: ["pubg"],
-			category: "Creations",
+			category: "creation",
 			usage: `${client.config.prefix}pubg`,
 			baseXp: 50,
         })

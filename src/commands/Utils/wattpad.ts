@@ -12,7 +12,7 @@ export default class Command extends BaseCommand {
         command: "wattpad",
 	description: `search wattpad stories`,
   	aliases: ["wattpad"],
-  	category: "Creations",
+  	category: "creation",
 	usage: `${client.config.prefix}wattpad`,
 	baseXp: 50,
         })

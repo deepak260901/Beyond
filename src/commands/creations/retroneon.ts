@@ -14,7 +14,7 @@ export default class Command extends BaseCommand {
 			command: "retroneon",
 			description: `Get text image`,
 			aliases: ["savage.retro"],
-			category: "Creation",
+			category: "creation",
 			usage: `${client.config.prefix}retroneon`,
 			baseXp: 50,
 		});

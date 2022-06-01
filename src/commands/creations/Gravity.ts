@@ -12,7 +12,7 @@ export default class Command extends BaseCommand {
       command: "gravity",
 			description: `Get text image of gravity Cover`,
 			aliases: ["gravity"],
-			category: "Creations",
+			category: "creation",
 			usage: `${client.config.prefix}gravity`,
 			baseXp: 50,
         })

@@ -11,7 +11,7 @@ export default class Command extends BaseCommand {
         super(client, handler, {
         command: "wattpad",
 	description: `search wattpad stories`,
-  	aliases: ["wartpad"],
+  	aliases: ["wattpad"],
   	category: "Creations",
 	usage: `${client.config.prefix}wattpad`,
 	baseXp: 50,

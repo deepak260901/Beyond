@@ -12,7 +12,7 @@ export default class Command extends BaseCommand {
       			command: "msug",
 			description: `Get text image of message under the glass  Cover`,
 			aliases: ["msug"],
-			category: "Creations",
+			category: "creation",
 			usage: `${client.config.prefix}msug`,
 			baseXp: 50,
         })

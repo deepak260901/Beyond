@@ -12,7 +12,7 @@ export default class Command extends BaseCommand {
       command: "lovemessage",
 			description: `Get text image of message in a heart  Cover`,
 			aliases: ["lm","nessage","love"],
-			category: "Creations",
+			category: "creation",
 			usage: `${client.config.prefix}lm`,
 			baseXp: 50,
         })

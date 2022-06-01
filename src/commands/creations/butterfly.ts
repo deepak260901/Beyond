@@ -12,7 +12,7 @@ export default class Command extends BaseCommand {
       command: "butterfly",
 			description: `Get text image of gravity Cover`,
 			aliases: ["butterfly"],
-			category: "Creations",
+			category: "creation",
 			usage: `${client.config.prefix}butterfly`,
 			baseXp: 50,
         })

@@ -11,11 +11,11 @@ const w5botapi = require('w5-textmaker');
 export default class Command extends BaseCommand {
 	constructor(client: WAClient, handler: MessageHandler) {
 		super(client, handler, {
-			command: "devil",
+			command: "thoor",
 			description: `Get text image`,
-			aliases: ["devil"],
+			aliases: ["thr"],
 			category: "creation",
-			usage: `${client.config.prefix}devil`,
+			usage: `${client.config.prefix}thor`,
 			baseXp: 50,
 		});
 	}
@@ -23,7 +23,7 @@ export default class Command extends BaseCommand {
 	run = async (M: ISimplifiedMessage, { joined }: IParsedArgs): Promise<void> => {
 		 if (!joined) return void (await M.reply(`Provide the text, Baka!`))
         const cara = joined.trim()
-		const wall = await w5botapi.textpro("https://textpro.me/create-neon-devil-wings-text-effect-online-free-1014.html",
+		const wall = await w5botapi.textpro("https://textpro.me/create-thor-logo-style-text-effect-online-1064.html",
     cara
     );
 		const buffer = await request.buffer(wall).catch((e) => {
@@ -36,7 +36,7 @@ export default class Command extends BaseCommand {
 					MessageType.image,
 					undefined,
 					undefined,
-					`🌟 Here you go.\n`,
+					`🍁 Here you go.\n`,
 					undefined
 				).catch((e) => {
 					console.log(

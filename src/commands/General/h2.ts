@@ -45,7 +45,7 @@ export default class Command extends BaseCommand {
 │⋊ I'am:  🎀𝓜𝓐𝓡𝓘𝓝𝓔🎀
 │⋊ MY PREFIX: ${this.client.config.prefix}
 │⋊ 私の愛: *${this.client.config.prefix}mod*
-│⋊ 私の愛 : wa.me//+918130784851     
+│⋊ 私の愛 : wa.me//+919015286428     
 ╰────────────┈平和                            \n\n`
             const keys = Object.keys(categories)
             for (const key of keys)
@@ -58,10 +58,14 @@ export default class Command extends BaseCommand {
             mimetype: Mimetype.gif,
             caption: `${text} 
  ──❅┈[ marin ]┈❅───
-┌────────────┈❅
+┌────────────┈𑁍𖣘
 │   🎀𝓜𝓐𝓡𝓘𝓝𝓔🎀
-│   ©️ MADED BY AYUSH
-└────────────┈⁂
+|   💙 *𝗵𝗲𝗹𝗹𝗼* 💙
+❖  🅵🅾🅻🅻🅾🆆 🅱🅾🆃 🅾🆆🅽🅴🆁 🅾🅽 🅸🅶 🅰🆂
+❖  https://instagram.com/_g.a.p.p.u_
+│    ✞︎☠︎︎ 𝘽𝙖𝙣𝙜 𝘽𝙖𝙣𝙜 𑁍𖣘߷☆✯
+|     ©️ MADED BY DEEPAK
+└────────────┈𖣘
 ❅┈[𝐇𝐚𝐯𝐞 𝐆𝐫𝐞𝐚𝐭 𝐃𝐚𝐲]┈❅
 🎗 *Note: Use ${this.client.config.prefix}help <command_name> to view the command info*` }
             )

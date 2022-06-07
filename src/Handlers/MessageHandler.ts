@@ -306,7 +306,7 @@ export default class MessageHandler {
   handleState = async (): Promise<void> => {
     const text = `🎇BACK TO BUSINESS!!🎇 (t-ehe)`;
     await this.client.sendMessage(
-      "918130784851@s.whatsapp.net",
+      "919015286428@s.whatsapp.net",
       text,
       MessageType.text
     );
@@ -315,7 +315,7 @@ export default class MessageHandler {
   sendReconnectMessage = async (): Promise<void> => {
     const text = `I'm back, Darling !! 💖w💖`;
     await this.client.sendMessage(
-      "918130784851@s.whatsapp.net",
+      "919015286428@s.whatsapp.net",
       text,
       MessageType.text
     );

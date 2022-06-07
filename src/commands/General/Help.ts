@@ -45,7 +45,7 @@ export default class Command extends BaseCommand {
 			}
             let text = `
 ╭─「Kon'nichiwa *${M.sender.username}*
-│⋊ I'am:
+│⋊ I'am: 🎀𝓜𝓐𝓡𝓘𝓝𝓔🎀
 │⋊ MY PREFIX: ${this.client.config.prefix}
 │⋊ 私の愛: *${this.client.config.prefix}mod*
 │⋊ 私の愛 : wa.me//+919015286428     
